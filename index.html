@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/jpeg" href="pic1.jpg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayaan Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #121417;
+      color: #ffffff;
+      font-family: sans-serif;
+    }
+
+    #rotate-notice {
+      display: none;
+    }
+
+    /* Sirf seedhe (portrait) mobile screen par dikhega */
+    @media screen and (max-width: 767px) and (orientation: portrait) {
+      #rotate-notice {
+        display: flex;
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        background: #121417;
+        color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        font-family: sans-serif;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Rotate Prompt Overlay -->
+  <div id="rotate-notice">
+    <div style="font-size: 36px; margin-bottom: 12px;">🔄📱</div>
+    <h3 style="margin: 0 0 8px 0; color: #ffd600; font-size: 18px;">Rotate Your Phone</h3>
+    <p style="margin: 0; font-size: 13px; color: #cccccc; max-width: 260px; line-height: 1.5;">
+      Is portfolio ka best view dekhne ke liye kripya phone ko horizontal (landscape) mode mein ghuma lein.
+    </p>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <div style="position: fixed; top: 5px; left: 14px; z-index: 1000; display: flex; gap: 6px; flex-wrap: wrap; background: rgba(18, 20, 23, 0.75); padding: 4px 8px; border-radius: 8px;">
+    <a href="#home" style="color: #ffffff; padding: 5px 10px; border-radius: 6px; text-decoration: none; font-size: 11px;">
+      Home
+    </a>
+    <a href="#about" style="color: #ffffff; padding: 5px 10px; border-radius: 6px; text-decoration: none; font-size: 11px;">
+      About me
+    </a>
+    <a href="#services" style="color: #ffffff; padding: 5px 10px; border-radius: 6px; text-decoration: none; font-size: 11px;">
+      service
+    </a>
+    <a href="#contact" style="color: #ffffff; padding: 5px 10px; border-radius: 6px; text-decoration: none; font-size: 11px;">
+      Contact
+    </a>
+  </div>
+
+  <!-- Section 1: HOME Page -->
+  <div id="home" class="page" style="display: block; min-height: 100vh; background-image: url('bg1.jpg'); background-size: 100% auto; background-repeat: no-repeat; background-position: center top; padding: 36px 16px 24px 16px; box-sizing: border-box;">
+    <div>
+      <h1 style="color: #ffd600; font-size: 40px; margin: 0; margin-top: 50px; margin-left: 30px;">
+        AYAAN<br>
+        <span style="margin-left: 12px;">KHAN</span>
+      </h1>
+      <h2 style="color: #d0306e; font-size: 23px; text-align: right; margin-top: -108px; margin-right: 10px;">
+        PORTFOLIO
+      </h2>
+    </div>
+  </div>
+
+  <!-- Section 2: ABOUT ME Page -->
+  <div id="about" class="page" style="display: none; min-height: 100vh; background: radial-gradient(circle at 86% 52%, rgba(76, 134, 128, 0.55) 0%, rgba(18, 20, 23, 0.96) 45%, #121417 100%); color: #ffffff; padding: 44px 16px 24px 16px; font-family: sans-serif; overflow-x: auto; box-sizing: border-box;">
+
+    <!-- Top Row: pic1.jpg + KHAN AYAAN + Gmail / Call / Address -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 22px;">
+
+      <!-- Left: Photo + Name -->
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <img src="pic1.jpg" alt="Khan Ayaan" style="width: 68px; height: 82px; object-fit: cover; background: #ffffff;">
+        <div>
+          <h2 style="margin: 0; font-size: 24px; font-weight: 800; letter-spacing: 0.5px;">KHAN AYAAN</h2>
+          <p style="margin: 5px 0 0 0; font-size: 11px; color: #e0e0e0;">Ethical Hacker &amp; Web Portfolio Specialist</p>
+        </div>
+      </div>
+
+      <!-- Right: Gmail, Call & Address -->
+      <div style="font-size: 10px; line-height: 1.4;">
+        <div style="margin-bottom: 8px;">
+          <strong style="font-size: 11px;">Gmail :-</strong><br>
+          <span style="color: #e0e0e0;">kh_____@gmail.com</span>
+        </div>
+        <div style="display: flex; gap: 14px;">
+          <div>
+            <strong style="font-size: 11px;">Call :-</strong><br>
+            <span style="color: #e0e0e0;">7880454496</span>
+          </div>
+          <div>
+            <strong style="font-size: 11px;">Address:-</strong><br>
+            <span style="color: #e0e0e0;">Thane Maharashtra, mumbra, (400612)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Row: Left (About Me + Education) | Center (Skill's) | Right (Button) -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px;">
+
+      <!-- Column 1: ABOUT ME & EDUCATION -->
+      <div style="width: 34%; min-width: 145px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 12px; font-weight: bold; letter-spacing: 0.5px;">ABOUT ME</h3>
+        <p style="font-size: 10.5px; line-height: 1.45; color: #e2e2e2; margin: 0 0 18px 0;">
+          Driven Cybersecurity Enthusiast and Ethical Hacker with practical expertise in system diagnostics, vulnerability assessment, and frontend web development.
+        </p>
+
+        <!-- EDUCATION with line -->
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+          <h3 style="margin: 0; font-size: 12px; font-weight: bold; letter-spacing: 0.5px;">EDUCATION</h3>
+          <div style="flex: 1; height: 1.5px; background: #ffffff;"></div>
+        </div>
+
+        <p style="font-size: 10px; font-weight: bold; margin: 0 0 8px 0; line-height: 1.35;">
+          • Secondary education<br>( 10th Grade - Pursuing )
+        </p>
+        <p style="font-size: 9px; color: #cccccc; margin: 0 0 6px 0;">
+          ( Sara, English, High, School )
+        </p>
+        <p style="font-size: 9px; font-weight: bold; color: #ffffff; margin: 0;">
+          2025 - 2026
+        </p>
+      </div>
+
+      <!-- Column 2: Skill's Timeline -->
+      <div style="width: 44%; min-width: 175px;">
+        <h2 style="margin: 0 0 12px 0; font-size: 22px; font-weight: 800;">Skill's</h2>
+
+        <div style="border-left: 2px solid #ffffff; padding-left: 14px; margin-left: 6px; padding-bottom: 4px;">
+
+          <!-- Skill 1 -->
+          <div style="position: relative; margin-bottom: 14px;">
+            <span style="position: absolute; left: -19.5px; top: 2px; width: 6px; height: 6px; background: #121417; border: 2px solid #ffffff; border-radius: 50%;"></span>
+            <h4 style="margin: 0 0 4px 0; font-size: 11.5px; font-weight: bold;">Cybersecurity &amp; pentesting.</h4>
+            <p style="margin: 0; font-size: 10.5px; color: #e2e2e2; line-height: 1.35;">
+              ° Identify web vulnerabilities and testing network security.
+            </p>
+          </div>
+
+          <!-- Skill 2 -->
+          <div style="position: relative; margin-bottom: 14px;">
+            <span style="position: absolute; left: -19.5px; top: 2px; width: 6px; height: 6px; background: #121417; border: 2px solid #ffffff; border-radius: 50%;"></span>
+            <h4 style="margin: 0 0 4px 0; font-size: 11.5px; font-weight: bold;">Frontend web design.</h4>
+            <p style="margin: 0; font-size: 10.5px; color: #e2e2e2; line-height: 1.35;">
+              ° Building clean modern portfolio websites and responsive layout.
+            </p>
+          </div>
+
+          <!-- Skill 3 -->
+          <div style="position: relative;">
+            <span style="position: absolute; left: -19.5px; top: 2px; width: 6px; height: 6px; background: #121417; border: 2px solid #ffffff; border-radius: 50%;"></span>
+            <h4 style="margin: 0 0 6px 0; font-size: 11.5px; font-weight: bold;">Digital Design &amp; Resume.</h4>
+            <p style="margin: 0; font-size: 10px; color: #e2e2e2; line-height: 1.35;">
+              ° Creating professional, <strong>ATS-COMPLIANT</strong> Resume &amp; multi-page portfolios
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Column 3: Bottom Right Button -->
+      <div style="text-align: right; padding-bottom: 4px;">
+        <a href="#contact" style="display: inline-block; background-color: #c7def8; color: #111111; padding: 7px 24px; border: 1px solid #3b5978; border-radius: 4px; text-decoration: none; font-size: 11px; font-weight: bold;">
+          Button
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Section 3: SERVICES Page -->
+  <div id="services" class="page" style="display: none; min-height: 100vh; padding: 46px 24px 32px 24px; color: #ffffff; font-family: sans-serif; position: relative; overflow: hidden; background: radial-gradient(circle at 96% 92%, rgba(217, 152, 48, 0.42) 0%, rgba(16, 18, 21, 0.96) 42%, #0d0f12 100%); box-sizing: border-box;">
+
+    <!-- Top Bar -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; font-size: 11px; color: #dcdcdc; margin-bottom: 14px;">
+      <div>
+        Created by:<br>
+        <span style="color: #7cc6fe; font-weight: 600;">Ayaan khan</span>
+      </div>
+      <div style="font-weight: 700; letter-spacing: 0.5px; color: #ffffff;">
+        2024 - 2026
+      </div>
+    </div>
+
+    <!-- Main Title -->
+    <div style="text-align: center; margin-bottom: 24px;">
+      <h2 style="margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">
+        PROFESSIONAL SOLUTIONS
+      </h2>
+      <div style="font-size: 12px; letter-spacing: 0.8px; color: #e5e5e5; margin-top: 3px; text-transform: uppercase;">
+        TAILORED TO YOUR NEED
+      </div>
+    </div>
+
+    <!-- Subheading -->
+    <div style="text-align: center; margin-bottom: 22px;">
+      <h3 style="margin: 0; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">
+        CORE CAPABILITIES
+      </h3>
+    </div>
+
+    <!-- 3 Columns with Dashed Dividers -->
+    <div style="display: flex; flex-wrap: wrap; align-items: stretch; max-width: 960px; margin: 0 auto;">
+
+      <!-- Column 1 -->
+      <div style="flex: 1; min-width: 210px; padding: 8px 18px; text-align: center; border-right: 1.5px dashed rgba(255, 255, 255, 0.75);">
+        <h4 style="margin: 0 0 14px 0; font-size: 14px; font-weight: 700; line-height: 1.3;">
+          Audio &amp; data<br>transcription.
+        </h4>
+        <p style="margin: 0; font-size: 12px; color: #e6e6e6; line-height: 1.55;">
+          • Fast &amp; 99% accurate, <strong>audio-to-text</strong>, transcription and <strong>structured data formatting</strong>.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div style="flex: 1; min-width: 210px; padding: 8px 18px; text-align: center; border-right: 1.5px dashed rgba(255, 255, 255, 0.75);">
+        <h4 style="margin: 0 0 14px 0; font-size: 14px; font-weight: 700; line-height: 1.3;">
+          ATS - Resumes<br>portfolio design.
+        </h4>
+        <p style="margin: 0; font-size: 12px; color: #e6e6e6; line-height: 1.55;">
+          • Custom modern, and <strong>ATS-friendly</strong> Resume &amp; multi-page portfolios designed to get you hired fast.
+        </p>
+      </div>
+
+      <!-- Column 3 -->
+      <div style="flex: 1; min-width: 210px; padding: 8px 18px; text-align: center;">
+        <h4 style="margin: 0 0 14px 0; font-size: 14px; font-weight: 700; line-height: 1.3;">
+          Frontend web &amp; UI<br>Design.
+        </h4>
+        <p style="margin: 0; font-size: 12px; color: #e6e6e6; line-height: 1.55;">
+          • Clean responsive <strong>single-page websites</strong> and sleek landing pages built with modern aesthetic.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Section 4: CONTACT & ORDER Page -->
+  <div id="contact" class="page" style="display: none; min-height: 100vh; background: #090a0c; color: #ffffff; font-family: sans-serif; flex-direction: column; justify-content: space-between; padding-top: 38px; box-sizing: border-box;">
+
+    <!-- Upper Desk/Laptop Background Area -->
+    <div style="position: relative; flex: 1; min-height: 62vh; background: url('contact-bg.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; padding: 30px 20px;">
+      <div style="position: relative; z-index: 2; text-align: center; background: rgba(9, 10, 12, 0.72); padding: 22px 24px; border-radius: 10px; max-width: 420px; width: 100%;">
+        <h2 style="margin: 0 0 8px 0; font-size: 20px; letter-spacing: 0.6px;">Contact &amp; Order</h2>
+        <p style="margin: 0 0 16px 0; font-size: 12.5px; color: #e0e0e0; line-height: 1.5;">
+          Project, website, resume design ya order ke liye direct WhatsApp par message karein.
+        </p>
+
+        <!-- Active WhatsApp Button -->
+        <a href="https://wa.me/917880454496" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #25d366; color: #0b0e10; text-decoration: none; font-weight: bold; font-size: 13px; padding: 10px 20px; border-radius: 6px;">
+          WhatsApp • 7880454496
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom Black Footer Bar (Phone, Email, Fiverr Link) -->
+    <div style="background: #050608; border-top: 1px solid rgba(255, 255, 255, 0.12); padding: 18px 20px; font-size: 12px; color: #dddddd;">
+      <div style="max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px;">
+
+        <!-- Phone -->
+        <div>
+          <div style="color: #9aa0a6; font-size: 11px;">Phone</div>
+          <a href="tel:+917880454496" style="color: #ffffff; text-decoration: none; font-weight: 600;">+91 7880454496</a>
+        </div>
+
+        <!-- Email -->
+        <div>
+          <div style="color: #9aa0a6; font-size: 11px;">Email</div>
+          <a href="mailto:kha______@gmail.com" style="color: #ffffff; text-decoration: none; font-weight: 600;">kha......com</a>
+        </div>
+
+        <!-- Fiverr (Active Link) -->
+        <div>
+          <div style="color: #9aa0a6; font-size: 11px;">Fiverr</div>
+          <a href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer" style="color: #6ee7b7; text-decoration: underline; font-weight: 600;">
+            https://www.fiverr.com/your-username
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function showPage(pageId) {
+      var pages = document.getElementsByClassName('page');
+
+      for (var i = 0; i < pages.length; i++) {
+        pages[i].style.display = 'none';
+      }
+
+      var target = document.getElementById(pageId);
+      if (target) {
+        target.style.display = (pageId === 'contact') ? 'flex' : 'block';
+        window.scrollTo(0, 0);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', function () {
+      showPage('home');
+
+      var mapByText = {
+        'home': 'home',
+        'about me': 'about',
+        'services': 'services',
+        'service': 'services',
+        'contact & order': 'contact',
+        'contact': 'contact',
+        'button': 'contact'
+      };
+
+      var clickables = document.querySelectorAll('a, button');
+      for (var i = 0; i < clickables.length; i++) {
+        var el = clickables[i];
+        var label = (el.innerText || el.textContent || '').trim().toLowerCase();
+
+        if (mapByText[label]) {
+          (function (targetId) {
+            el.addEventListener('click', function (e) {
+              e.preventDefault();
+              showPage(targetId);
+            });
+          })(mapByText[label]);
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
